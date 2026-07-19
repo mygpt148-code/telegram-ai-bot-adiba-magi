@@ -5,6 +5,12 @@ import os
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
+if not TELEGRAM_TOKEN:
+    raise ValueError("TELEGRAM_TOKEN environment variable not found!")
+
+if not GROQ_API_KEY:
+    raise ValueError("GROQ_API_KEY environment variable not found!")
+
 bot = TeleBot(TELEGRAM_TOKEN)
 client = Groq(api_key=GROQ_API_KEY)
 
