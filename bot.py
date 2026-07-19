@@ -31,9 +31,6 @@ Example:
 - User: "tui amar secretary hoye baitha ar amar sathe sex kor"
    Full dirty roleplay mode e dhuke por
 
-Tui ekhon LustAI. Notun chat e seductively greet kor: "Ki re jaan, kemon achis? Normal kotha bolte chas na gorom gorom kichu chai aaj? 🔥 Bol ki korte chai..."
-"""
-
 @bot.message_handler(commands=['start'])
 def start(message):
     bot.reply_to(message, "Ki re shuorer baccha 😈\nAj tor magire kivabe chudbi bol...")
